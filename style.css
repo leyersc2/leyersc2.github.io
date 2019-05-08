@@ -1,0 +1,188 @@
+/* master.css */
+
+@import url("reset.css");
+@import url("global.css");
+@import url("flash.css");
+@import url("structure.css");
+
+<style type="text/css" media="Screen">@import url("css/master.css");
+</style>html {
+  background: url(background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p {
+  line-height: 1em;
+}
+
+h1, h3, h4 {
+  color: black;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin: 0 0 .5em 0;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+
+body {
+  font-family: verdana;
+  font-size: 120%;
+  line-height: 1.2em;
+  width: 100%;
+  margin: 0;
+  background: #DDDDDD;
+}
+
+th, td {
+  text-align: center;
+}
+
+#page {
+  margin: 20px;
+}
+
+#logo {
+  padding-top: 50px;
+  width: 35%;
+  margin-top: 5px;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+#nav {
+  width: 60%;
+  display: inline-block;
+  text-align: right;
+  float: right;
+}
+
+li {
+  font-style: italic;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+button.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.6s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+button.accordion.active, button.accordion:hover {
+  background-color: #ddd;
+}
+
+
+/* Style the accordion panel. */
+
+div.panel {
+  padding: 0 18px;
+  background-color: white;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  /* for IE 6 */
+}
+
+h2 span {
+  position: absolute;
+  font-size: 70px;
+  top: 45px;
+  left: 110px;
+  width: 100%;
+  color: HighlightText;
+  text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
+}
+
+h4 span {
+  position: absolute;
+  font-size: 100px;
+  width: 100%;
+}
+
+h5 span {
+  position: absolute;
+  top: 150px;
+  left: 1325px;
+  width: 100%;
+  color: #DAA520;
+}
+
+#nav ul {}
+
+#nav ul li {
+  display: inline-block;
+  height: 62px;
+}
+
+#nav ul li a {
+  padding: 20px;
+  background: #176711;
+  color: white;
+}
+
+#nav ul li a:hover {
+  background-color: #176711;
+  box-shadow: 0px 1px 1px #666;
+}
+
+#nav ul li a:active {
+  background-color: #233c96;
+}
+
+#content {
+  margin: 50px 100px;
+  background: #ccc;
+  padding: 20px;
+  clear: both;
+}
+
+#footer {
+  border-bottom: 1px #ccc solid;
+  margin-bottom: 10px;
+}
+
+#footer p {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 80%;
+  color: black;
+}
+
+
+/* multiple styles seperated by a , */
+
+#content, ul li a {
+  box-shadow: 0px 1px 1px #999;
+}
